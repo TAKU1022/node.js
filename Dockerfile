@@ -9,3 +9,5 @@ ENV TZ Asia/Tokyo
 RUN npm install pug@2.0.4
 RUN npm install -g pug-cli
 WORKDIR /app
+COPY . /app
+CMD ["sh", "run.sh"]
